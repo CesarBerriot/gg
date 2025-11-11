@@ -1,6 +1,6 @@
 add_executable(installer WIN32)
 set_target_properties(installer PROPERTIES OUTPUT_NAME "gg-installer")
-target_link_libraries(installer PRIVATE string_theory)
+target_link_libraries(installer PRIVATE shared string_theory)
 target_compile_definitions(installer PRIVATE MODULE_NAME="GG Installer")
 add_dependencies(installer application)
 discover_sources(installer)

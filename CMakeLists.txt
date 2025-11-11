@@ -36,5 +36,6 @@ function(setup_resource_library target)
   target_link_libraries(${target} PRIVATE ${resource_library_name})
 endfunction()
 
+add_subdirectory(shared)
 add_subdirectory(application)
 add_subdirectory(installer)
