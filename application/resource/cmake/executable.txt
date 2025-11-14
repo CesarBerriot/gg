@@ -22,13 +22,12 @@ endblock()
 
 add_executable(executable)
 discover_sources(executable)
-dial_link_target(stock_widget)
+dial_link_target(executable)
 #cxxhttp_setup_target(executable)
 #target_include_directories(executable PRIVATE source)
 target_compile_definitions(
   executable PRIVATE
-  ALPHA_VANTAGE_API_KEY="${ALPHA_VANTAGE_API_KEY}"
-  MODULE_NAME="Stock Widget"
+  MODULE_NAME="Executable"
 )
 target_link_libraries(
   executable PRIVATE
@@ -37,8 +36,8 @@ target_link_libraries(
   #nlohmann_json
 )
 if(MINGW)
-  target_link_options(${target} PRIVATE -static)
+  target_link_options(executable PRIVATE -static)
   if(NOT CMAKE_BUILD_TYPE STREQUAL "Debug")
-    target_link_options(${target} PRIVATE -s)
+    target_link_options(executable PRIVATE -s)
   endif()
 endif()
