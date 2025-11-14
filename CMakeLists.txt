@@ -10,7 +10,7 @@ include(${fetch_github_content_SOURCE_DIR}/fetch_github_content.cmake)
 
 block()
   fetch_github_content(
-    dial CesarBerriot 2.2.0
+    dial CesarBerriot 2.2.1
     discover_sources CesarBerriot 1.1.0 INCLUDE_DEFAULT
     cmrc vector-of-bool 2.0.1
     string_theory CesarBerriot 3.9
