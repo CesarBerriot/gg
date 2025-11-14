@@ -72,6 +72,7 @@ action_map_t action_map =
 	{	{	"Git Actions",
 			{	{ "Init", command_single("init") },
 				{ "Status", command_single("status") },
+				{ "Diff", command_single("diff") },
 				{ "Version", command_single("--version") },
 				{ "Push", command_single("push origin master") },
 				{	"Reset Master And Force Push",

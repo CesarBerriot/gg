@@ -110,6 +110,8 @@ void form::draw_project_tree()
 									ImGui::SameLine();
 									button("Remove", "rm --cached -r");
 									ImGui::SameLine();
+									button("Diff", "diff");
+									ImGui::SameLine();
 									procedure(path);
 									ImGui::PopID();
 								}
