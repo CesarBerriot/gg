@@ -24,7 +24,7 @@ add_executable(executable)
 discover_sources(executable)
 dial_link_target(executable)
 #cxxhttp_setup_target(executable)
-#target_include_directories(executable PRIVATE source)
+target_include_directories(executable PRIVATE source)
 target_compile_definitions(
   executable PRIVATE
   MODULE_NAME="Executable"
