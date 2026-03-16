@@ -12,9 +12,9 @@ block()
 
   fetch_github_content(
     discover_sources CesarBerriot 1.1.0 INCLUDE_DEFAULT
-    dial CesarBerriot 2.2.3
+    dial CesarBerriot 2.2.4
     #hard_assert CesarBerriot 1.2.3
-    #make_string CesarBerriot 2.2.3
+    #make_string CesarBerriot 2.2.4
     #cxxhttp CesarBerriot 1.0.0 INCLUDE_DEFAULT
     #json nlohmann v3.12.0
   )
